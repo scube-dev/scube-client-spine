@@ -21,9 +21,14 @@ class App extends Spine.Controller
 
     Spine.Route.history = true
 
-    @append(@playlists = new Playlists)
+    @playlists = new Playlists
+    @sessions = new Sessions
+
+    @append @playlists, @sessions
 
     Spine.Route.setup()
+
+    @navigate '/sessions/new'
 
 window.App = App
 

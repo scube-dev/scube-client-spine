@@ -8,7 +8,7 @@ class Index extends Spine.Controller
   constructor: ->
     super
     Playlist.bind 'refresh change', @render
-    Playlist.fetch()
+    @active Playlist.fetch()
 
   render: =>
     playlists = Playlist.all()
@@ -73,8 +73,6 @@ class Playlists extends Spine.Stack
     index:  Index
     show:   Show
     new:    New
-
-  default: 'index'
 
   routes:
     '/playlists/new': 'new'
