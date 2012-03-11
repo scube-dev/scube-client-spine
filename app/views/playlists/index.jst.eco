@@ -1,0 +1,15 @@
+<h1>Playlists</h1>
+
+<p>
+  <a data-type="new">New playlist</a>
+</p>
+
+<% for playlist in @playlists: %>
+  <ul>
+    <li class="item" data-id="<%= playlist.id %>">
+      <a data-type="show">
+        <%= playlist.name %>
+      </a>
+    </li>
+  </ul>
+<% end %>

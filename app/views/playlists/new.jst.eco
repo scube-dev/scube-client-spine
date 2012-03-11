@@ -1,0 +1,14 @@
+<h1>New playlist</h1>
+
+<p>
+  <a data-type="back">back</a>
+</p>
+
+<form>
+  <label>
+    <span>Name</span>
+    <input name="name" type="text" value="<%= @name %>" required>
+  </label>
+
+  <button>Create</button>
+</form>

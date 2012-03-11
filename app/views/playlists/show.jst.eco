@@ -1,0 +1,9 @@
+<h1>Playlist "<%= @name %>"</h1>
+
+<p>
+  <a data-type="back">back</a>
+</p>
+
+<p>
+  <%= @name %>
+</p>

@@ -16,6 +16,10 @@ class App extends Spine.Controller
   constructor: ->
     super
 
+    Spine.Model.host = 'http://localhost:3000'
+
+    @append(@playlists = new Playlists)
+
     Spine.Route.setup()
 
 
