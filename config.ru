@@ -17,7 +17,7 @@ class MemoryFile
   end
 
   def body
-    @content ||= File.read @file
+    @content ||= @file.read
   end
 
   def call(env)
@@ -26,7 +26,8 @@ class MemoryFile
 end
 
 map '/' do
-  run MemoryFile.new 'public/index.html'
+  file = File.new 'public/index.html'
+  run MemoryFile.new file
 end
 
 map '/app' do
