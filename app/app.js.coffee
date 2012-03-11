@@ -18,6 +18,8 @@ class App extends Spine.Controller
 
     Spine.Model.host = 'http://localhost:3000'
 
+    Spine.Route.history = true
+
     @append(@playlists = new Playlists)
 
     Spine.Route.setup()
