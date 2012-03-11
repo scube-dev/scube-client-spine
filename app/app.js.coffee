@@ -17,7 +17,7 @@ class App extends Spine.Controller
   constructor: ->
     super
 
-    Spine.Model.host = 'http://localhost:3000'
+    Spine.Model.host = 'http://localhost:3000/api/v0'
 
     Spine.Route.history = true
 
