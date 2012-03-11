@@ -12,6 +12,7 @@
 #= require_tree ./controllers
 #= require_tree ./views
 
+
 class App extends Spine.Controller
   constructor: ->
     super
@@ -23,7 +24,6 @@ class App extends Spine.Controller
     @append(@playlists = new Playlists)
 
     Spine.Route.setup()
-
 
 window.App = App
 
