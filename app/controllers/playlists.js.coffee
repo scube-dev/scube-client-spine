@@ -1,11 +1,3 @@
-$ = jQuery.sub()
-
-$.fn.item = ->
-  elementID   = $(@).data('id')
-  elementID or= $(@).parents('[data-id]').data('id')
-  Playlist.find(elementID)
-
-
 class Index extends Spine.Controller
   className: 'index'
 
@@ -23,8 +15,8 @@ class Index extends Spine.Controller
     @html @view('playlists/index')(playlists: playlists)
 
   show: (e) ->
-    item = $(e.target).item()
-    @navigate '/playlists', item.id
+    playlist = Playlist.find($(e.target).item_id())
+    @navigate '/playlists', playlist.id
 
   new: (e) ->
     @navigate '/playlists/new'
