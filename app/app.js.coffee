@@ -19,14 +19,12 @@ class App extends Spine.Controller
 
     Spine.Model.host = 'http://localhost:3000/api/v0'
 
-    Spine.Route.history = true
-
     @playlists = new Playlists
     @sessions = new Sessions
 
     @append @playlists, @sessions
 
-    Spine.Route.setup()
+    Spine.Route.setup(history: true)
 
     @navigate '/sessions/new'
 
