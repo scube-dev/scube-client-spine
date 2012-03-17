@@ -33,6 +33,6 @@ class App extends Spine.Controller
 window.App = App
 
 
-$(document).ready ->
+$ ->
   $('body').html('<div id="app"></div>')
   new App({el: $('#app')})
