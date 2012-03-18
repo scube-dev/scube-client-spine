@@ -9,7 +9,9 @@
 #= require_tree ./lib
 #= require_self
 #= require_tree ./models
-#= require_tree ./controllers
+#= require ./controllers/playlists
+#= require ./controllers/sessions
+#= require ./controllers/main
 #= require_tree ./views
 
 
@@ -19,10 +21,8 @@ class App extends Spine.Controller
 
     Spine.Model.host = 'http://localhost:3000/api/v0'
 
-    @playlists = new Playlists
-    @sessions = new Sessions
-
-    @append @playlists, @sessions
+    main = new Main
+    @append main
 
     Spine.Route.setup(history: true)
 

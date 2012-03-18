@@ -8,7 +8,13 @@ class Index extends Spine.Controller
   constructor: ->
     super
     Playlist.bind 'refresh change', @render
-    @active Playlist.fetch()
+    @need_fetch = true
+    @active @on_active
+
+  on_active: =>
+    Playlist.fetch() if @need_fetch
+    @need_fetch = false
+    true
 
   render: =>
     playlists = Playlist.all()
