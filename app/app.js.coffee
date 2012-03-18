@@ -19,7 +19,7 @@ class App extends Spine.Controller
   constructor: ->
     super
 
-    Spine.Model.host = 'http://localhost:3000/api/v0'
+    Spine.Model.host = 'http://localhost:3000/api'
 
     main = new Main
     @append main
