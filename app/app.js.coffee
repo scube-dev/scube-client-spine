@@ -11,6 +11,7 @@
 #= require_tree ./models
 #= require ./controllers/playlists
 #= require ./controllers/sessions
+#= require ./controllers/tracks
 #= require ./controllers/main
 #= require_tree ./views
 

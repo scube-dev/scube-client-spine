@@ -1,0 +1,15 @@
+<h1>Tracks</h1>
+
+<p>
+  <a data-type="playlists">Playlists</a>
+</p>
+
+<% for t in @tracks: %>
+  <ul>
+    <li class="item" data-id="<%= t.id %>">
+      <a data-type="play">
+        <%= t.name %>
+      </a>
+    </li>
+  </ul>
+<% end %>

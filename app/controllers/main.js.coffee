@@ -13,6 +13,7 @@ class MainStack extends Spine.Stack
   controllers:
     sessions: Sessions
     playlists: Playlists
+    tracks: Tracks
 
   default: 'sessions'
 

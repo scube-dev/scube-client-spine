@@ -4,6 +4,7 @@ class Index extends Spine.Controller
   events:
     'click [data-type=show]': 'show'
     'click [data-type=new]': 'new'
+    'click [data-type=tracks]': 'tracks'
 
   constructor: ->
     super
@@ -26,6 +27,9 @@ class Index extends Spine.Controller
 
   new: (e) ->
     @navigate '/playlists/new'
+
+  tracks: (e) ->
+    @navigate '/tracks'
 
 
 class Show extends Spine.Controller
