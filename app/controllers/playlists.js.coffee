@@ -66,7 +66,8 @@ class New extends Spine.Controller
 
   submit: (e) ->
     e.preventDefault()
-    alert('save!')
+    playlist = Playlist.fromForm(e.target).save()
+    @navigate '/playlists' if playlist
 
   back: ->
     @navigate '/playlists'
