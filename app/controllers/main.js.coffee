@@ -8,9 +8,10 @@ class Main extends Spine.Controller
 
     @routes
       '/': ->
+        @prepend header
         main.home.active()
 
-    @append header, main
+    @append main
 
 
 class MainStack extends Spine.Stack
