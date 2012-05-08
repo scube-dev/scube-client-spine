@@ -3,12 +3,12 @@ class Main extends Spine.Controller
 
   constructor: ->
     super
+
     main = new MainStack
-    header = new HeaderController
 
     @routes
       '/': ->
-        @prepend header
+        @prepend new HeaderController
         main.home.active()
 
     @append main
