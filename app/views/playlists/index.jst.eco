@@ -2,8 +2,6 @@
 
 <p>
   <a data-type="new">New playlist</a>
-  |
-  <a data-type="tracks">Tracks</a>
 </p>
 
 <% for playlist in @playlists: %>

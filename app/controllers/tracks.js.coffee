@@ -2,7 +2,6 @@ class Index extends Spine.Controller
   className: 'index'
 
   events:
-    'click [data-type=playlists]': 'playlists'
     'click [data-type=play]': 'play'
 
   constructor: ->
@@ -19,9 +18,6 @@ class Index extends Spine.Controller
   render: =>
     tracks = Track.all()
     @html @view('tracks/index')(tracks: tracks)
-
-  playlists: (e) ->
-    @navigate '/playlists'
 
   play: (e) =>
     track = Track.find($(e.target).item_id())

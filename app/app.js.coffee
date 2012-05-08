@@ -9,6 +9,7 @@
 #= require_tree ./lib
 #= require_self
 #= require_tree ./models
+#= require ./controllers/header
 #= require ./controllers/playlists
 #= require ./controllers/sessions
 #= require ./controllers/tracks

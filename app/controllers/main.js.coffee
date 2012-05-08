@@ -4,7 +4,8 @@ class Main extends Spine.Controller
   constructor: ->
     super
     main = new MainStack
-    @append main
+    header = new HeaderController
+    @append header, main
 
 
 class MainStack extends Spine.Stack

@@ -1,0 +1,12 @@
+<em class="app-title">S³</em>
+may play your audio files (or not)
+<nav>
+  <ul>
+    <li>
+      <a data-type="playlists-index">Playlists</a>
+    </li>
+    <li>
+      <a data-type="tracks-index">Tracks</a>
+    </li>
+  </ul>
+</nav>
