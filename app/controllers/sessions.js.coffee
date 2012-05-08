@@ -15,7 +15,7 @@ class New extends Spine.Controller
     e.preventDefault()
     @session = Session.fromForm(e.target)
     @session.bind 'ajaxSuccess', (record, data, status, xhr) =>
-      @navigate '/playlists'
+      @navigate '/'
     @session.save()
 
 

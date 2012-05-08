@@ -10,6 +10,7 @@
 #= require_self
 #= require_tree ./models
 #= require ./controllers/header
+#= require ./controllers/home
 #= require ./controllers/playlists
 #= require ./controllers/sessions
 #= require ./controllers/tracks
