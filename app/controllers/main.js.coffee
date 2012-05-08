@@ -3,7 +3,7 @@ class Main extends Spine.Controller
 
   constructor: ->
     super
-    main = new MainStack()
+    main = new MainStack
     @append main
 
 
