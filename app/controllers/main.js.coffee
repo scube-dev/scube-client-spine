@@ -8,6 +8,7 @@ class Main extends Spine.Controller
 
     @routes
       '/': ->
+        @prepend new PlayerController
         @prepend new HeaderController
         main.home.active()
 

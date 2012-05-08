@@ -1,0 +1,17 @@
+<p>
+  Current track:
+  <em>
+    <%= @name %>
+  </em>
+</p>
+
+<nav>
+  <ul>
+    <li>
+      <button data-type="play-pause-toggle">░</button>
+    </li>
+    <li>
+      <button data-type="stop">□</button>
+    </li>
+  <ul>
+</nav>

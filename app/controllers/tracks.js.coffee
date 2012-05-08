@@ -21,9 +21,7 @@ class Index extends Spine.Controller
 
   play: (e) =>
     track = Track.find($(e.target).item_id())
-    audio = new Audio
-    audio.src = track.sound_url
-    audio.play()
+    track.play()
 
 
 class Tracks extends Spine.Stack
