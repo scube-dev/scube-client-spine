@@ -30,7 +30,6 @@ class App extends Spine.Controller
 
     Spine.Route.setup(history: true)
 
-    @navigate '/sessions/new'
 
 window.App = App
 
